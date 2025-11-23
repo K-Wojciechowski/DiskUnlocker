@@ -14,6 +14,13 @@ This is where DiskUnlocker comes in: it reads the event log and displays a list 
 
 Note the list usually includes a `System` entry. If `System` is accompanied by another entry pointing at another process, it is likely killing this process will unblock the `System` process too. If `System` is the only entry, you may need to look for issues on your own.
 
+## Download
+
+You can download DiskUnlocker from [GitHub Releases](https://github.com/K-Wojciechowski/DiskUnlocker/releases).
+
+* `DiskUnlocker.zip` requires [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/10.0/runtime).
+* `DiskUnlocker-selfcontained.zip` should work without installing anything on Windows 11 x64.
+
 ## License
 
 The code is MIT-licensed. The icon is taken from `shell32.dll`.

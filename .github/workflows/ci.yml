@@ -25,9 +25,9 @@ jobs:
     - name: Build
       run: dotnet build
     - name: Publish framework-dependent
-      run: dotnet publish -c Release -o publish
+      run: dotnet publish -c Release -o publish src/DiskUnlocker/DiskUnlocker.csproj
     - name: Publish self-contained
-      run: dotnet publish -c Release -o publish-selfcontained -r win-x64 --self-contained true
+      run: dotnet publish -c Release -o publish-selfcontained -r win-x64 --self-contained true src/DiskUnlocker/DiskUnlocker.csproj
     - name: Create ZIPs
       run: |
         mkdir zips
